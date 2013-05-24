@@ -133,14 +133,50 @@
 		6C34BC89170C064D00F0C192 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C34BC88170C064D00F0C192 /* AppDelegate.m */; };
 		6C34BC8C170C064D00F0C192 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C34BC8B170C064D00F0C192 /* HelloWorldLayer.m */; };
 		6C34BC8F170C064D00F0C192 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C34BC8E170C064D00F0C192 /* IntroLayer.m */; };
-		6C361845170C281F0071445B /* MoreCCMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C361844170C281F0071445B /* MoreCCMenu.m */; };
-		6C361848170C35210071445B /* MoreCCActionBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C361847170C35210071445B /* MoreCCActionBundle.m */; };
-		6C534EBD1711143100C31019 /* MoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C534EBC1711143000C31019 /* MoreData.m */; };
-		6C534EC11711254800C31019 /* MoreCCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C534EC01711254800C31019 /* MoreCCUtility.m */; };
+		6C688FF3172BB1C1003F3F60 /* Font1.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FEB172BB1C1003F3F60 /* Font1.fnt */; };
+		6C688FF4172BB1C1003F3F60 /* Font1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FEC172BB1C1003F3F60 /* Font1.png */; };
+		6C688FF5172BB1C1003F3F60 /* Particle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FED172BB1C1003F3F60 /* Particle.plist */; };
+		6C688FF6172BB1C1003F3F60 /* saya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FEE172BB1C1003F3F60 /* saya.jpg */; };
+		6C688FF7172BB1C1003F3F60 /* saya.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FEF172BB1C1003F3F60 /* saya.png */; };
+		6C688FF8172BB1C1003F3F60 /* Test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FF0172BB1C1003F3F60 /* Test.plist */; };
+		6C688FFB172BCB0E003F3F60 /* Test.data in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FFA172BCB0E003F3F60 /* Test.data */; };
+		6C6FA4AE172B7D2B00D758D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C34BB09170C064900F0C192 /* Foundation.framework */; };
+		6C6FA4B1172B7D2B00D758D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6FA4B0172B7D2B00D758D8 /* main.m */; };
+		6C6FA4B5172B7D2B00D758D8 /* MoreArchiver.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C6FA4B4172B7D2B00D758D8 /* MoreArchiver.1 */; };
+		6C707600174F6BC600E90AB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C34BB09170C064900F0C192 /* Foundation.framework */; };
+		6C70760B174F6BD600E90AB4 /* MoreCCMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C361844170C281F0071445B /* MoreCCMenu.m */; };
+		6C70760C174F6BD600E90AB4 /* MoreCCActionBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C361847170C35210071445B /* MoreCCActionBundle.m */; };
+		6C70760D174F6BD600E90AB4 /* MoreCCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C534EC01711254800C31019 /* MoreCCUtility.m */; };
+		6C70760E174F6BD600E90AB4 /* MoreCCArchiveSupports.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C688FE5172BA74B003F3F60 /* MoreCCArchiveSupports.m */; };
+		6C70760F174F6BE000E90AB4 /* MoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C534EBC1711143000C31019 /* MoreData.m */; };
+		6C707610174F6BE000E90AB4 /* MoreArchiveLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6FA4BA172B7DE000D758D8 /* MoreArchiveLoader.m */; };
+		6C707611174F6C0600E90AB4 /* libMoreTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7075FF174F6BC600E90AB4 /* libMoreTools.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6C6FA4AB172B7D2A00D758D8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				6C6FA4B5172B7D2B00D758D8 /* MoreArchiver.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6C7075FD174F6BC600E90AB4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		6C34BAF9170C064800F0C192 /* MoreTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoreTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C34BAF9170C064800F0C192 /* MoreTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MoreTools.app; path = MoreToolsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C34BAFD170C064800F0C192 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6C34BAFF170C064800F0C192 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		6C34BB01170C064900F0C192 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -412,6 +448,22 @@
 		6C534EBF1711254700C31019 /* MoreCCUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreCCUtility.h; path = MoreTools/MoreCCUtility.h; sourceTree = "<group>"; };
 		6C534EC01711254800C31019 /* MoreCCUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreCCUtility.m; path = MoreTools/MoreCCUtility.m; sourceTree = "<group>"; };
 		6C534EEB171165FD00C31019 /* MoreTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MoreTools.h; path = MoreTools/MoreTools.h; sourceTree = "<group>"; };
+		6C688FE4172BA74B003F3F60 /* MoreCCArchiveSupports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreCCArchiveSupports.h; path = MoreTools/MoreCCArchiveSupports.h; sourceTree = "<group>"; };
+		6C688FE5172BA74B003F3F60 /* MoreCCArchiveSupports.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreCCArchiveSupports.m; path = MoreTools/MoreCCArchiveSupports.m; sourceTree = "<group>"; };
+		6C688FEB172BB1C1003F3F60 /* Font1.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Font1.fnt; sourceTree = "<group>"; };
+		6C688FEC172BB1C1003F3F60 /* Font1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Font1.png; sourceTree = "<group>"; };
+		6C688FED172BB1C1003F3F60 /* Particle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Particle.plist; sourceTree = "<group>"; };
+		6C688FEE172BB1C1003F3F60 /* saya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saya.jpg; sourceTree = "<group>"; };
+		6C688FEF172BB1C1003F3F60 /* saya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saya.png; sourceTree = "<group>"; };
+		6C688FF0172BB1C1003F3F60 /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
+		6C688FFA172BCB0E003F3F60 /* Test.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Test.data; path = Resources/Test.data; sourceTree = "<group>"; };
+		6C6FA4AD172B7D2A00D758D8 /* MoreArchiver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MoreArchiver; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C6FA4B0172B7D2B00D758D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6C6FA4B3172B7D2B00D758D8 /* MoreArchiver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoreArchiver-Prefix.pch"; sourceTree = "<group>"; };
+		6C6FA4B4172B7D2B00D758D8 /* MoreArchiver.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MoreArchiver.1; sourceTree = "<group>"; };
+		6C6FA4B9172B7DE000D758D8 /* MoreArchiveLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreArchiveLoader.h; path = MoreTools/MoreArchiveLoader.h; sourceTree = "<group>"; };
+		6C6FA4BA172B7DE000D758D8 /* MoreArchiveLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreArchiveLoader.m; path = MoreTools/MoreArchiveLoader.m; sourceTree = "<group>"; };
+		6C7075FF174F6BC600E90AB4 /* libMoreTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMoreTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +471,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C707611174F6C0600E90AB4 /* libMoreTools.a in Frameworks */,
 				6C34BAFE170C064800F0C192 /* QuartzCore.framework in Frameworks */,
 				6C34BB00170C064900F0C192 /* OpenGLES.framework in Frameworks */,
 				6C34BB02170C064900F0C192 /* OpenAL.framework in Frameworks */,
@@ -431,6 +484,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C6FA4AA172B7D2A00D758D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C6FA4AE172B7D2B00D758D8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7075FC174F6BC600E90AB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C707600174F6BC600E90AB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -438,6 +507,7 @@
 			isa = PBXGroup;
 			children = (
 				6C34BB0F170C064900F0C192 /* MoreTools */,
+				6C6FA4AF172B7D2B00D758D8 /* MoreArchiver */,
 				6C34BAFC170C064800F0C192 /* Frameworks */,
 				6C34BAFA170C064800F0C192 /* Products */,
 			);
@@ -447,6 +517,8 @@
 			isa = PBXGroup;
 			children = (
 				6C34BAF9170C064800F0C192 /* MoreTools.app */,
+				6C6FA4AD172B7D2A00D758D8 /* MoreArchiver */,
+				6C7075FF174F6BC600E90AB4 /* libMoreTools.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -487,6 +559,8 @@
 		6C34BB10170C064900F0C192 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6C688FFA172BCB0E003F3F60 /* Test.data */,
+				6C688FE9172BB1C1003F3F60 /* GameResPack */,
 				6C34BB11170C064900F0C192 /* Default.png */,
 				6C34BB13170C064900F0C192 /* Default-Landscape~ipad.png */,
 				6C34BB15170C064900F0C192 /* fps_images.png */,
@@ -863,6 +937,8 @@
 				6C534EBB1711143000C31019 /* MoreData.h */,
 				6C534EBC1711143000C31019 /* MoreData.m */,
 				6C361839170C098A0071445B /* MoreMacros.h */,
+				6C6FA4B9172B7DE000D758D8 /* MoreArchiveLoader.h */,
+				6C6FA4BA172B7DE000D758D8 /* MoreArchiveLoader.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -876,16 +952,50 @@
 				6C361847170C35210071445B /* MoreCCActionBundle.m */,
 				6C534EBF1711254700C31019 /* MoreCCUtility.h */,
 				6C534EC01711254800C31019 /* MoreCCUtility.m */,
+				6C688FE4172BA74B003F3F60 /* MoreCCArchiveSupports.h */,
+				6C688FE5172BA74B003F3F60 /* MoreCCArchiveSupports.m */,
 			);
 			name = Cocos2d;
+			sourceTree = "<group>";
+		};
+		6C688FE9172BB1C1003F3F60 /* GameResPack */ = {
+			isa = PBXGroup;
+			children = (
+				6C688FEB172BB1C1003F3F60 /* Font1.fnt */,
+				6C688FEC172BB1C1003F3F60 /* Font1.png */,
+				6C688FED172BB1C1003F3F60 /* Particle.plist */,
+				6C688FEE172BB1C1003F3F60 /* saya.jpg */,
+				6C688FEF172BB1C1003F3F60 /* saya.png */,
+				6C688FF0172BB1C1003F3F60 /* Test.plist */,
+			);
+			name = GameResPack;
+			path = Resources/GameResPack;
+			sourceTree = "<group>";
+		};
+		6C6FA4AF172B7D2B00D758D8 /* MoreArchiver */ = {
+			isa = PBXGroup;
+			children = (
+				6C6FA4B0172B7D2B00D758D8 /* main.m */,
+				6C6FA4B4172B7D2B00D758D8 /* MoreArchiver.1 */,
+				6C6FA4B2172B7D2B00D758D8 /* Supporting Files */,
+			);
+			path = MoreArchiver;
+			sourceTree = "<group>";
+		};
+		6C6FA4B2172B7D2B00D758D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C6FA4B3172B7D2B00D758D8 /* MoreArchiver-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6C34BAF8170C064800F0C192 /* MoreTools */ = {
+		6C34BAF8170C064800F0C192 /* MoreToolsTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C34BC92170C064D00F0C192 /* Build configuration list for PBXNativeTarget "MoreTools" */;
+			buildConfigurationList = 6C34BC92170C064D00F0C192 /* Build configuration list for PBXNativeTarget "MoreToolsTest" */;
 			buildPhases = (
 				6C34BAF5170C064800F0C192 /* Sources */,
 				6C34BAF6170C064800F0C192 /* Frameworks */,
@@ -895,10 +1005,44 @@
 			);
 			dependencies = (
 			);
-			name = MoreTools;
+			name = MoreToolsTest;
 			productName = MoreTools;
 			productReference = 6C34BAF9170C064800F0C192 /* MoreTools.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6C6FA4AC172B7D2A00D758D8 /* MoreArchiver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C6FA4B8172B7D2B00D758D8 /* Build configuration list for PBXNativeTarget "MoreArchiver" */;
+			buildPhases = (
+				6C6FA4A9172B7D2A00D758D8 /* Sources */,
+				6C6FA4AA172B7D2A00D758D8 /* Frameworks */,
+				6C6FA4AB172B7D2A00D758D8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoreArchiver;
+			productName = MoreArchiver;
+			productReference = 6C6FA4AD172B7D2A00D758D8 /* MoreArchiver */;
+			productType = "com.apple.product-type.tool";
+		};
+		6C7075FE174F6BC600E90AB4 /* MoreTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C707608174F6BC600E90AB4 /* Build configuration list for PBXNativeTarget "MoreTools" */;
+			buildPhases = (
+				6C7075FB174F6BC600E90AB4 /* Sources */,
+				6C7075FC174F6BC600E90AB4 /* Frameworks */,
+				6C7075FD174F6BC600E90AB4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoreTools;
+			productName = MoreTools;
+			productReference = 6C7075FF174F6BC600E90AB4 /* libMoreTools.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -920,7 +1064,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6C34BAF8170C064800F0C192 /* MoreTools */,
+				6C34BAF8170C064800F0C192 /* MoreToolsTest */,
+				6C6FA4AC172B7D2A00D758D8 /* MoreArchiver */,
+				6C7075FE174F6BC600E90AB4 /* MoreTools */,
 			);
 		};
 /* End PBXProject section */
@@ -943,6 +1089,13 @@
 				6C34BB26170C064900F0C192 /* Icon@2x.png in Resources */,
 				6C34BB29170C064900F0C192 /* iTunesArtwork in Resources */,
 				6C34BC67170C064D00F0C192 /* ChangeLog in Resources */,
+				6C688FF3172BB1C1003F3F60 /* Font1.fnt in Resources */,
+				6C688FF4172BB1C1003F3F60 /* Font1.png in Resources */,
+				6C688FF5172BB1C1003F3F60 /* Particle.plist in Resources */,
+				6C688FF6172BB1C1003F3F60 /* saya.jpg in Resources */,
+				6C688FF7172BB1C1003F3F60 /* saya.png in Resources */,
+				6C688FF8172BB1C1003F3F60 /* Test.plist in Resources */,
+				6C688FFB172BCB0E003F3F60 /* Test.data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1057,10 +1210,27 @@
 				6C34BC89170C064D00F0C192 /* AppDelegate.m in Sources */,
 				6C34BC8C170C064D00F0C192 /* HelloWorldLayer.m in Sources */,
 				6C34BC8F170C064D00F0C192 /* IntroLayer.m in Sources */,
-				6C361845170C281F0071445B /* MoreCCMenu.m in Sources */,
-				6C361848170C35210071445B /* MoreCCActionBundle.m in Sources */,
-				6C534EBD1711143100C31019 /* MoreData.m in Sources */,
-				6C534EC11711254800C31019 /* MoreCCUtility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C6FA4A9172B7D2A00D758D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C6FA4B1172B7D2B00D758D8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C7075FB174F6BC600E90AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C70760B174F6BD600E90AB4 /* MoreCCMenu.m in Sources */,
+				6C70760C174F6BD600E90AB4 /* MoreCCActionBundle.m in Sources */,
+				6C70760D174F6BD600E90AB4 /* MoreCCUtility.m in Sources */,
+				6C70760E174F6BD600E90AB4 /* MoreCCArchiveSupports.m in Sources */,
+				6C70760F174F6BE000E90AB4 /* MoreData.m in Sources */,
+				6C707610174F6BE000E90AB4 /* MoreArchiveLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1153,6 +1323,115 @@
 			};
 			name = Release;
 		};
+		6C6FA4B6172B7D2B00D758D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoreArchiver/MoreArchiver-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6C6FA4B7172B7D2B00D758D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoreArchiver/MoreArchiver-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6C707609174F6BC600E90AB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/MoreTools.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6C70760A174F6BC600E90AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/MoreTools.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1165,11 +1444,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C34BC92170C064D00F0C192 /* Build configuration list for PBXNativeTarget "MoreTools" */ = {
+		6C34BC92170C064D00F0C192 /* Build configuration list for PBXNativeTarget "MoreToolsTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C34BC93170C064D00F0C192 /* Debug */,
 				6C34BC94170C064D00F0C192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C6FA4B8172B7D2B00D758D8 /* Build configuration list for PBXNativeTarget "MoreArchiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C6FA4B6172B7D2B00D758D8 /* Debug */,
+				6C6FA4B7172B7D2B00D758D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C707608174F6BC600E90AB4 /* Build configuration list for PBXNativeTarget "MoreTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C707609174F6BC600E90AB4 /* Debug */,
+				6C70760A174F6BC600E90AB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

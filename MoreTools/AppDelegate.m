@@ -14,73 +14,11 @@
 
 #import "MoreTools.h"
 
-#define ANTI_CRACK_METHOD_IS_CRACKED sub3255A0
-#pragma mark -
-#pragma mark 防破解
-#import <dlfcn.h>
-#import <mach-o/dyld.h>
-#import <TargetConditionals.h>
-#if TARGET_IPHONE_SIMULATOR && !defined(LC_ENCRYPTION_INFO)
-#define LC_ENCRYPTION_INFO 0x21
-struct encryption_info_command {
-    uint32_t cmd;
-    uint32_t cmdsize;
-    uint32_t cryptoff;
-    uint32_t cryptsize;
-    uint32_t cryptid;
-};
-#endif
-static __inline__ BOOL ANTI_CRACK_METHOD_IS_CRACKED(){
-#if TARGET_IPHONE_SIMULATOR
-	return NO;
-#else
-    
-    int main (int argc, char *argv[]);
-	const struct mach_header *header;
-    Dl_info dlinfo;
-	if (dladdr((void*)main, &dlinfo) == 0 || dlinfo.dli_fbase == NULL) {
-        return YES;//不符合正常情况的程序结构
-    }
-	header = (struct mach_header*)dlinfo.dli_fbase;
-	struct load_command *cmd = (struct load_command *) (header+1);
-	for (uint32_t i = 0; cmd != NULL && i < header->ncmds; i++) {
-        if (cmd->cmd == LC_ENCRYPTION_INFO) {
-            struct encryption_info_command *crypt_cmd = (struct encryption_info_command *) cmd;
-            if (crypt_cmd->cryptid < 1) {
-                return YES;//解密标志被改动
-            }else {
-                return NO;
-			}
-        }
-        cmd = (struct load_command *) ((uint8_t *) cmd + cmd->cmdsize);
-    }
-	return YES;//未找到解密标志，不符合结构
-#endif
-}
-
 @implementation AppController
 
 @synthesize window=window_, navController=navController_, director=director_;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    
-    typedef void (^OutAnimation)(void);
-    NSMutableArray *arr = [[NSMutableArray alloc] initWithCapacity:50];
-    for (int i = 0; i < 10; i++) {
-        OutAnimation ani = ^(void){
-            int j = i;
-            NSLog(@"%d",j);
-        };
-        [arr addObject:Block_copy(ani)];
-        Block_release(ani);
-    }
-    for (OutAnimation ani in arr) {
-        ani();
-    }
-    [arr release];
-    
-    ANTI_CRACK_METHOD_IS_CRACKED();
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     
 	// Create the main window
 	window_ = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

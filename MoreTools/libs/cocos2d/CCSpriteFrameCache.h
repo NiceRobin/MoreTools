@@ -60,6 +60,7 @@
  */
 +(void)purgeSharedSpriteFrameCache;
 
+-(void) addSpriteFramesWithDictionary:(NSDictionary*)dictionary textureReference:(id)textureReference;
 
 /** Adds multiple Sprite Frames from a plist file.
  * A texture will be loaded automatically. The texture name will composed by replacing the .plist suffix with .png .

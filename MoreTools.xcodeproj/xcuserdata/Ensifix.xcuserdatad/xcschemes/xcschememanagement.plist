@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MoreArchiver.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>MoreTools.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>MoreToolsTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -13,6 +23,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>6C34BAF8170C064800F0C192</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C6FA4AC172B7D2A00D758D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C7075FE174F6BC600E90AB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -25,8 +25,8 @@
 
 // cocos2d
 #ifdef cocos2d_program
-#define WIN_SIZE [[CCDirector sharedDirector] winSize]
-
+#define WIN_SIZE    [[CCDirector sharedDirector] winSize]
+#define WIN_CENTER  ccp(WIN_SIZE.width / 2.0f, WIN_SIZE.height / 2.0f)
 #endif
 
 // debugs

@@ -10,7 +10,7 @@
 
 #ifdef cocos2d_program
 #import "cocos2d.h"
-@interface MoreAction
+@interface MoreAction :NSObject
 +(id)moreDelay:(float)time doAction:(id)nact;
 +(id)moreDestroySelfAction;
 +(id)moreShakeActionWithDuration:(ccTime)d maxR:(float)r;
