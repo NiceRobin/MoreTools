@@ -133,6 +133,7 @@
 		6C34BC89170C064D00F0C192 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C34BC88170C064D00F0C192 /* AppDelegate.m */; };
 		6C34BC8C170C064D00F0C192 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C34BC8B170C064D00F0C192 /* HelloWorldLayer.m */; };
 		6C34BC8F170C064D00F0C192 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C34BC8E170C064D00F0C192 /* IntroLayer.m */; };
+		6C3A6D6817530E36005D4FB7 /* map.ar in Resources */ = {isa = PBXBuildFile; fileRef = 6C3A6D6717530E36005D4FB7 /* map.ar */; };
 		6C688FF3172BB1C1003F3F60 /* Font1.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FEB172BB1C1003F3F60 /* Font1.fnt */; };
 		6C688FF4172BB1C1003F3F60 /* Font1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FEC172BB1C1003F3F60 /* Font1.png */; };
 		6C688FF5172BB1C1003F3F60 /* Particle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FED172BB1C1003F3F60 /* Particle.plist */; };
@@ -176,7 +177,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6C34BAF9170C064800F0C192 /* MoreTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MoreTools.app; path = MoreToolsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C34BAF9170C064800F0C192 /* MoreToolsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoreToolsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C34BAFD170C064800F0C192 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6C34BAFF170C064800F0C192 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		6C34BB01170C064900F0C192 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -443,6 +444,7 @@
 		6C361844170C281F0071445B /* MoreCCMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreCCMenu.m; path = MoreTools/MoreCCMenu.m; sourceTree = "<group>"; };
 		6C361846170C35210071445B /* MoreCCActionBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreCCActionBundle.h; path = MoreTools/MoreCCActionBundle.h; sourceTree = "<group>"; };
 		6C361847170C35210071445B /* MoreCCActionBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreCCActionBundle.m; path = MoreTools/MoreCCActionBundle.m; sourceTree = "<group>"; };
+		6C3A6D6717530E36005D4FB7 /* map.ar */ = {isa = PBXFileReference; lastKnownFileType = file; name = map.ar; path = Resources/map.ar; sourceTree = "<group>"; };
 		6C534EBB1711143000C31019 /* MoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreData.h; path = MoreTools/MoreData.h; sourceTree = "<group>"; };
 		6C534EBC1711143000C31019 /* MoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreData.m; path = MoreTools/MoreData.m; sourceTree = "<group>"; };
 		6C534EBF1711254700C31019 /* MoreCCUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreCCUtility.h; path = MoreTools/MoreCCUtility.h; sourceTree = "<group>"; };
@@ -516,7 +518,7 @@
 		6C34BAFA170C064800F0C192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C34BAF9170C064800F0C192 /* MoreTools.app */,
+				6C34BAF9170C064800F0C192 /* MoreToolsTest.app */,
 				6C6FA4AD172B7D2A00D758D8 /* MoreArchiver */,
 				6C7075FF174F6BC600E90AB4 /* libMoreTools.a */,
 			);
@@ -559,6 +561,7 @@
 		6C34BB10170C064900F0C192 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6C3A6D6717530E36005D4FB7 /* map.ar */,
 				6C688FFA172BCB0E003F3F60 /* Test.data */,
 				6C688FE9172BB1C1003F3F60 /* GameResPack */,
 				6C34BB11170C064900F0C192 /* Default.png */,
@@ -1007,7 +1010,7 @@
 			);
 			name = MoreToolsTest;
 			productName = MoreTools;
-			productReference = 6C34BAF9170C064800F0C192 /* MoreTools.app */;
+			productReference = 6C34BAF9170C064800F0C192 /* MoreToolsTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6C6FA4AC172B7D2A00D758D8 /* MoreArchiver */ = {
@@ -1096,6 +1099,7 @@
 				6C688FF7172BB1C1003F3F60 /* saya.png in Resources */,
 				6C688FF8172BB1C1003F3F60 /* Test.plist in Resources */,
 				6C688FFB172BCB0E003F3F60 /* Test.data in Resources */,
+				6C3A6D6817530E36005D4FB7 /* map.ar in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1285,12 +1289,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MoreTools/Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"MoreTools/libs/kazmath/include\"";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/MoreTools/libs/kazmath/include";
 				INFOPLIST_FILE = MoreTools/Resources/Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Desktop/Base/Supports/DCLibs/DCUtility\"",
-				);
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
@@ -1307,12 +1307,8 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MoreTools/Prefix.pch;
-				HEADER_SEARCH_PATHS = "\"MoreTools/libs/kazmath/include\"";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/MoreTools/libs/kazmath/include";
 				INFOPLIST_FILE = MoreTools/Resources/Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Desktop/Base/Supports/DCLibs/DCUtility\"",
-				);
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
