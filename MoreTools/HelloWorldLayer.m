@@ -6,76 +6,51 @@
 //  Copyright __MyCompanyName__ 2013年. All rights reserved.
 //
 
-
-// Import the interfaces
 #import "HelloWorldLayer.h"
-
-// Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
-
 #import "MoreTools.h"
-
-
+#import "MoreCCArchiveSupports.h"
 #import "SimpleAudioEngine.h"
 
 #pragma mark - HelloWorldLayer
 
-// HelloWorldLayer implementation
 @implementation HelloWorldLayer
-
-// Helper class method that creates a Scene with the HelloWorldLayer as the only child.
-+(CCScene *) scene
-{
-	// 'scene' is an autorelease object.
++(CCScene *) scene{
 	CCScene *scene = [CCScene node];
-	
-	// 'layer' is an autorelease object.
 	HelloWorldLayer *layer = [HelloWorldLayer node];
-	
-	// add layer as a child to scene
 	[scene addChild: layer];
-	
-	// return the scene
 	return scene;
 }
-
-// on "init" you need to initialize your instance
--(id) init
-{
-	// always call "super" init
-	// Apple recommends to re-assign "self" with the "super's" return value
+-(void)downFinish{
+    
+}
+-(id) init{
 	if( (self=[super init]) ) {
+        [[MoreArchiveLoader singleton] openArchiveFile:MainBundleFile(@"Test.data") key:@"10086"];
         
+        CCSprite *spr = [[CCSprite alloc] initWithArchName:@"b-0@2x.png" inArchiveFile:MainBundleFile(@"Test.data")];
+        spr.position = WIN_CENTER;
+        [self addChild:spr];
         
+        [spr runAction:[CCRepeatForever actionWithAction:[CCSequence actionOne:[CCFadeTo actionWithDuration:0.5f opacity:0] two:[CCFadeTo actionWithDuration:0.5f opacity:255]]]];
         
-
-
+        dispatch_queue_t myQueue = dispatch_queue_create("com.yoo.test", NULL);
+        dispatch_async(myQueue, ^{
+            NSURL *url = [NSURL URLWithString:@"http://ww4.sinaimg.cn/large/69da054djw1e7gblytkn6j20h90crjsl.jpg"];
+            NSData *imageData = [NSData dataWithContentsOfURL:url];
+            UIImage *image = [UIImage imageWithData:imageData];
+            [self downFinish];
+            //dispatch_async(dispatch_get_main_queue(), ^{
+                CCSprite *newone = [CCSprite spriteWithCGImage:image.CGImage key:@"too"];
+                newone.scale = 0.5;
+                [self addChild:newone];
+            //});
+        });
+        
 	}
 	return self;
 }
-
-// on "dealloc" you need to release all your retained objects
-- (void) dealloc
-{
-	// in case you have something to dealloc, do it in this method
-	// in this particular example nothing needs to be released.
-	// cocos2d will automatically release all the children (Label)
-	
-	// don't forget to call "super dealloc"
+- (void) dealloc{
 	[super dealloc];
-}
-
-#pragma mark GameKit delegate
-
--(void) achievementViewControllerDidFinish:(GKAchievementViewController *)viewController
-{
-	AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-	[[app navController] dismissModalViewControllerAnimated:YES];
-}
-
--(void) leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController
-{
-	AppController *app = (AppController*) [[UIApplication sharedApplication] delegate];
-	[[app navController] dismissModalViewControllerAnimated:YES];
 }
 @end

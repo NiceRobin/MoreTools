@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MoreData.h"
 
 #define same_time_opened_archives   10
 #define key_version_info            @"Archive_Version"
@@ -16,7 +17,7 @@
 +(MoreArchiveLoader*)singleton;
 +(void)end;
 
--(void)openArchiveFile:(NSString*)arName;
+-(void)openArchiveFile:(NSString*)arName key:(NSString*)key;
 -(void)closeArchiveFile:(NSString*)arName;
 -(NSData*)getData:(NSString*)name inArchiveFile:(NSString*)arName;
 

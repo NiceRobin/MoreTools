@@ -7,7 +7,36 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSONKit.h"
 
+#import <CommonCrypto/CommonCryptor.h>
+NSData *doAes(NSData *input, NSString *key, CCOperation op){
+    char keyPtr[kCCKeySizeAES256 + 1];
+    bzero(keyPtr, sizeof(keyPtr));
+    [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF16StringEncoding];
+
+    NSUInteger length = input.length;
+    size_t size = length + kCCBlockSizeAES128;
+    void *buffer = malloc(size);
+    
+    size_t encryptedLength = 0;
+    
+    CCCryptorStatus result = CCCrypt(op, kCCAlgorithmAES128,
+                                     kCCOptionPKCS7Padding | kCCOptionECBMode,
+                                     keyPtr, kCCKeySizeAES256,
+                                     NULL,
+                                     [input bytes], input.length,
+                                     buffer, size,
+                                     &encryptedLength);
+    NSData *ret = nil;
+    if (result == kCCSuccess) {
+        ret = [NSData dataWithBytes:buffer length:encryptedLength];
+        free(buffer);
+    }else{
+        free(buffer);
+    }
+    return ret;
+}
 
 BOOL notHiddenFile(NSString* path){
     return ![[path lastPathComponent] hasPrefix:@"."];
@@ -62,9 +91,10 @@ const NSString *version_string = @"More Archive V1.0";
 
 int main(int argc, const char * argv[]){
     @autoreleasepool {
-        if (argc == 3) {
+        if (argc == 4) {
             NSString *path = [NSString stringWithCString:argv[1] encoding:NSASCIIStringEncoding];
             NSString *outPut = [NSString stringWithCString:argv[2] encoding:NSASCIIStringEncoding];
+            NSString *key = [NSString stringWithCString:argv[3] encoding:NSASCIIStringEncoding];
             
             NSFileManager *mgr = [NSFileManager defaultManager];
             if (![mgr fileExistsAtPath:outPut]) {
@@ -83,11 +113,14 @@ int main(int argc, const char * argv[]){
             [dict setObject:[NSValue valueWithRange:NSMakeRange([version length], 0)] forKey:rootKey];
             
             archiveFolder(path, rootKey, dict, handle);
-            NSData *dictData = [NSKeyedArchiver archivedDataWithRootObject:dict];
-            [handle writeData:dictData];
             
-            uint32_t packSize = [dictData length];
+            NSData *dictData = [NSKeyedArchiver archivedDataWithRootObject:dict];
+            NSData *data2 = doAes(dictData, key, kCCEncrypt);
+            [handle writeData:data2];
+            
+            uint32_t packSize = [data2 length];
             [handle writeData:[NSData dataWithBytes:&packSize length:sizeof(uint32_t)]];
+            
             NSLog(@"done");
             [dict release];
             [handle closeFile];

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MoreMacros.h"
+#import <CommonCrypto/CommonCryptor.h>
 
 @interface MoreSimpleSaveData : NSObject{
     NSMutableDictionary *content;
@@ -26,3 +27,5 @@
 
 void writeLog(NSString* content);
 void clearLog();
+
+NSData *moreAES(NSData *input, NSString *key, CCOperation op);

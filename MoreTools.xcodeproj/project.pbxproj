@@ -133,7 +133,6 @@
 		6C34BC89170C064D00F0C192 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C34BC88170C064D00F0C192 /* AppDelegate.m */; };
 		6C34BC8C170C064D00F0C192 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C34BC8B170C064D00F0C192 /* HelloWorldLayer.m */; };
 		6C34BC8F170C064D00F0C192 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C34BC8E170C064D00F0C192 /* IntroLayer.m */; };
-		6C3A6D6817530E36005D4FB7 /* map.ar in Resources */ = {isa = PBXBuildFile; fileRef = 6C3A6D6717530E36005D4FB7 /* map.ar */; };
 		6C688FF3172BB1C1003F3F60 /* Font1.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FEB172BB1C1003F3F60 /* Font1.fnt */; };
 		6C688FF4172BB1C1003F3F60 /* Font1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FEC172BB1C1003F3F60 /* Font1.png */; };
 		6C688FF5172BB1C1003F3F60 /* Particle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FED172BB1C1003F3F60 /* Particle.plist */; };
@@ -141,17 +140,17 @@
 		6C688FF7172BB1C1003F3F60 /* saya.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FEF172BB1C1003F3F60 /* saya.png */; };
 		6C688FF8172BB1C1003F3F60 /* Test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FF0172BB1C1003F3F60 /* Test.plist */; };
 		6C688FFB172BCB0E003F3F60 /* Test.data in Resources */ = {isa = PBXBuildFile; fileRef = 6C688FFA172BCB0E003F3F60 /* Test.data */; };
+		6C6EF70A176073A80058799F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6EF709176073A80058799F /* JSONKit.m */; };
 		6C6FA4AE172B7D2B00D758D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C34BB09170C064900F0C192 /* Foundation.framework */; };
 		6C6FA4B1172B7D2B00D758D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6FA4B0172B7D2B00D758D8 /* main.m */; };
 		6C6FA4B5172B7D2B00D758D8 /* MoreArchiver.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6C6FA4B4172B7D2B00D758D8 /* MoreArchiver.1 */; };
 		6C707600174F6BC600E90AB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C34BB09170C064900F0C192 /* Foundation.framework */; };
-		6C70760B174F6BD600E90AB4 /* MoreCCMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C361844170C281F0071445B /* MoreCCMenu.m */; };
-		6C70760C174F6BD600E90AB4 /* MoreCCActionBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C361847170C35210071445B /* MoreCCActionBundle.m */; };
-		6C70760D174F6BD600E90AB4 /* MoreCCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C534EC01711254800C31019 /* MoreCCUtility.m */; };
-		6C70760E174F6BD600E90AB4 /* MoreCCArchiveSupports.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C688FE5172BA74B003F3F60 /* MoreCCArchiveSupports.m */; };
-		6C70760F174F6BE000E90AB4 /* MoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C534EBC1711143000C31019 /* MoreData.m */; };
-		6C707610174F6BE000E90AB4 /* MoreArchiveLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6FA4BA172B7DE000D758D8 /* MoreArchiveLoader.m */; };
-		6C707611174F6C0600E90AB4 /* libMoreTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7075FF174F6BC600E90AB4 /* libMoreTools.a */; };
+		6CD5DECD1797F04D00018919 /* MoreArchiveLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD5DEC01797F04D00018919 /* MoreArchiveLoader.m */; };
+		6CD5DECE1797F04D00018919 /* MoreCCActionBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD5DEC21797F04D00018919 /* MoreCCActionBundle.m */; };
+		6CD5DECF1797F04D00018919 /* MoreCCArchiveSupports.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD5DEC41797F04D00018919 /* MoreCCArchiveSupports.m */; };
+		6CD5DED01797F04D00018919 /* MoreCCMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD5DEC61797F04D00018919 /* MoreCCMenu.m */; };
+		6CD5DED11797F04D00018919 /* MoreCCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD5DEC81797F04D00018919 /* MoreCCUtility.m */; };
+		6CD5DED21797F04D00018919 /* MoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD5DECA1797F04D00018919 /* MoreData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -439,19 +438,6 @@
 		6C34BC8B170C064D00F0C192 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		6C34BC8D170C064D00F0C192 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		6C34BC8E170C064D00F0C192 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
-		6C361839170C098A0071445B /* MoreMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MoreMacros.h; path = MoreTools/MoreMacros.h; sourceTree = "<group>"; };
-		6C361843170C281F0071445B /* MoreCCMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreCCMenu.h; path = MoreTools/MoreCCMenu.h; sourceTree = "<group>"; };
-		6C361844170C281F0071445B /* MoreCCMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreCCMenu.m; path = MoreTools/MoreCCMenu.m; sourceTree = "<group>"; };
-		6C361846170C35210071445B /* MoreCCActionBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreCCActionBundle.h; path = MoreTools/MoreCCActionBundle.h; sourceTree = "<group>"; };
-		6C361847170C35210071445B /* MoreCCActionBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreCCActionBundle.m; path = MoreTools/MoreCCActionBundle.m; sourceTree = "<group>"; };
-		6C3A6D6717530E36005D4FB7 /* map.ar */ = {isa = PBXFileReference; lastKnownFileType = file; name = map.ar; path = Resources/map.ar; sourceTree = "<group>"; };
-		6C534EBB1711143000C31019 /* MoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreData.h; path = MoreTools/MoreData.h; sourceTree = "<group>"; };
-		6C534EBC1711143000C31019 /* MoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreData.m; path = MoreTools/MoreData.m; sourceTree = "<group>"; };
-		6C534EBF1711254700C31019 /* MoreCCUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreCCUtility.h; path = MoreTools/MoreCCUtility.h; sourceTree = "<group>"; };
-		6C534EC01711254800C31019 /* MoreCCUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreCCUtility.m; path = MoreTools/MoreCCUtility.m; sourceTree = "<group>"; };
-		6C534EEB171165FD00C31019 /* MoreTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MoreTools.h; path = MoreTools/MoreTools.h; sourceTree = "<group>"; };
-		6C688FE4172BA74B003F3F60 /* MoreCCArchiveSupports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreCCArchiveSupports.h; path = MoreTools/MoreCCArchiveSupports.h; sourceTree = "<group>"; };
-		6C688FE5172BA74B003F3F60 /* MoreCCArchiveSupports.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreCCArchiveSupports.m; path = MoreTools/MoreCCArchiveSupports.m; sourceTree = "<group>"; };
 		6C688FEB172BB1C1003F3F60 /* Font1.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Font1.fnt; sourceTree = "<group>"; };
 		6C688FEC172BB1C1003F3F60 /* Font1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Font1.png; sourceTree = "<group>"; };
 		6C688FED172BB1C1003F3F60 /* Particle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Particle.plist; sourceTree = "<group>"; };
@@ -459,13 +445,27 @@
 		6C688FEF172BB1C1003F3F60 /* saya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saya.png; sourceTree = "<group>"; };
 		6C688FF0172BB1C1003F3F60 /* Test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Test.plist; sourceTree = "<group>"; };
 		6C688FFA172BCB0E003F3F60 /* Test.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Test.data; path = Resources/Test.data; sourceTree = "<group>"; };
+		6C6EF708176073A80058799F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		6C6EF709176073A80058799F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		6C6FA4AD172B7D2A00D758D8 /* MoreArchiver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MoreArchiver; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C6FA4B0172B7D2B00D758D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6C6FA4B3172B7D2B00D758D8 /* MoreArchiver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoreArchiver-Prefix.pch"; sourceTree = "<group>"; };
 		6C6FA4B4172B7D2B00D758D8 /* MoreArchiver.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MoreArchiver.1; sourceTree = "<group>"; };
-		6C6FA4B9172B7DE000D758D8 /* MoreArchiveLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreArchiveLoader.h; path = MoreTools/MoreArchiveLoader.h; sourceTree = "<group>"; };
-		6C6FA4BA172B7DE000D758D8 /* MoreArchiveLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreArchiveLoader.m; path = MoreTools/MoreArchiveLoader.m; sourceTree = "<group>"; };
 		6C7075FF174F6BC600E90AB4 /* libMoreTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMoreTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CD5DEBF1797F04D00018919 /* MoreArchiveLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreArchiveLoader.h; sourceTree = "<group>"; };
+		6CD5DEC01797F04D00018919 /* MoreArchiveLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreArchiveLoader.m; sourceTree = "<group>"; };
+		6CD5DEC11797F04D00018919 /* MoreCCActionBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCCActionBundle.h; sourceTree = "<group>"; };
+		6CD5DEC21797F04D00018919 /* MoreCCActionBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCCActionBundle.m; sourceTree = "<group>"; };
+		6CD5DEC31797F04D00018919 /* MoreCCArchiveSupports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCCArchiveSupports.h; sourceTree = "<group>"; };
+		6CD5DEC41797F04D00018919 /* MoreCCArchiveSupports.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCCArchiveSupports.m; sourceTree = "<group>"; };
+		6CD5DEC51797F04D00018919 /* MoreCCMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCCMenu.h; sourceTree = "<group>"; };
+		6CD5DEC61797F04D00018919 /* MoreCCMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCCMenu.m; sourceTree = "<group>"; };
+		6CD5DEC71797F04D00018919 /* MoreCCUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCCUtility.h; sourceTree = "<group>"; };
+		6CD5DEC81797F04D00018919 /* MoreCCUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCCUtility.m; sourceTree = "<group>"; };
+		6CD5DEC91797F04D00018919 /* MoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreData.h; sourceTree = "<group>"; };
+		6CD5DECA1797F04D00018919 /* MoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreData.m; sourceTree = "<group>"; };
+		6CD5DECB1797F04D00018919 /* MoreMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreMacros.h; sourceTree = "<group>"; };
+		6CD5DECC1797F04D00018919 /* MoreTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTools.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -473,7 +473,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C707611174F6C0600E90AB4 /* libMoreTools.a in Frameworks */,
 				6C34BAFE170C064800F0C192 /* QuartzCore.framework in Frameworks */,
 				6C34BB00170C064900F0C192 /* OpenGLES.framework in Frameworks */,
 				6C34BB02170C064900F0C192 /* OpenAL.framework in Frameworks */,
@@ -544,7 +543,7 @@
 		6C34BB0F170C064900F0C192 /* MoreTools */ = {
 			isa = PBXGroup;
 			children = (
-				6C361836170C08CD0071445B /* MT */,
+				6CD5DEBE1797F04D00018919 /* MoreTools */,
 				6C34BC87170C064D00F0C192 /* AppDelegate.h */,
 				6C34BC88170C064D00F0C192 /* AppDelegate.m */,
 				6C34BC8A170C064D00F0C192 /* HelloWorldLayer.h */,
@@ -561,7 +560,6 @@
 		6C34BB10170C064900F0C192 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6C3A6D6717530E36005D4FB7 /* map.ar */,
 				6C688FFA172BCB0E003F3F60 /* Test.data */,
 				6C688FE9172BB1C1003F3F60 /* GameResPack */,
 				6C34BB11170C064900F0C192 /* Default.png */,
@@ -924,43 +922,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6C361836170C08CD0071445B /* MT */ = {
-			isa = PBXGroup;
-			children = (
-				6C361842170C27E60071445B /* Cocos2d */,
-				6C361838170C08E30071445B /* Common */,
-				6C534EEB171165FD00C31019 /* MoreTools.h */,
-			);
-			name = MT;
-			sourceTree = "<group>";
-		};
-		6C361838170C08E30071445B /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				6C534EBB1711143000C31019 /* MoreData.h */,
-				6C534EBC1711143000C31019 /* MoreData.m */,
-				6C361839170C098A0071445B /* MoreMacros.h */,
-				6C6FA4B9172B7DE000D758D8 /* MoreArchiveLoader.h */,
-				6C6FA4BA172B7DE000D758D8 /* MoreArchiveLoader.m */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
-		6C361842170C27E60071445B /* Cocos2d */ = {
-			isa = PBXGroup;
-			children = (
-				6C361843170C281F0071445B /* MoreCCMenu.h */,
-				6C361844170C281F0071445B /* MoreCCMenu.m */,
-				6C361846170C35210071445B /* MoreCCActionBundle.h */,
-				6C361847170C35210071445B /* MoreCCActionBundle.m */,
-				6C534EBF1711254700C31019 /* MoreCCUtility.h */,
-				6C534EC01711254800C31019 /* MoreCCUtility.m */,
-				6C688FE4172BA74B003F3F60 /* MoreCCArchiveSupports.h */,
-				6C688FE5172BA74B003F3F60 /* MoreCCArchiveSupports.m */,
-			);
-			name = Cocos2d;
-			sourceTree = "<group>";
-		};
 		6C688FE9172BB1C1003F3F60 /* GameResPack */ = {
 			isa = PBXGroup;
 			children = (
@@ -978,6 +939,8 @@
 		6C6FA4AF172B7D2B00D758D8 /* MoreArchiver */ = {
 			isa = PBXGroup;
 			children = (
+				6C6EF708176073A80058799F /* JSONKit.h */,
+				6C6EF709176073A80058799F /* JSONKit.m */,
 				6C6FA4B0172B7D2B00D758D8 /* main.m */,
 				6C6FA4B4172B7D2B00D758D8 /* MoreArchiver.1 */,
 				6C6FA4B2172B7D2B00D758D8 /* Supporting Files */,
@@ -991,6 +954,27 @@
 				6C6FA4B3172B7D2B00D758D8 /* MoreArchiver-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CD5DEBE1797F04D00018919 /* MoreTools */ = {
+			isa = PBXGroup;
+			children = (
+				6CD5DEBF1797F04D00018919 /* MoreArchiveLoader.h */,
+				6CD5DEC01797F04D00018919 /* MoreArchiveLoader.m */,
+				6CD5DEC11797F04D00018919 /* MoreCCActionBundle.h */,
+				6CD5DEC21797F04D00018919 /* MoreCCActionBundle.m */,
+				6CD5DEC31797F04D00018919 /* MoreCCArchiveSupports.h */,
+				6CD5DEC41797F04D00018919 /* MoreCCArchiveSupports.m */,
+				6CD5DEC51797F04D00018919 /* MoreCCMenu.h */,
+				6CD5DEC61797F04D00018919 /* MoreCCMenu.m */,
+				6CD5DEC71797F04D00018919 /* MoreCCUtility.h */,
+				6CD5DEC81797F04D00018919 /* MoreCCUtility.m */,
+				6CD5DEC91797F04D00018919 /* MoreData.h */,
+				6CD5DECA1797F04D00018919 /* MoreData.m */,
+				6CD5DECB1797F04D00018919 /* MoreMacros.h */,
+				6CD5DECC1797F04D00018919 /* MoreTools.h */,
+			);
+			path = MoreTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1099,7 +1083,6 @@
 				6C688FF7172BB1C1003F3F60 /* saya.png in Resources */,
 				6C688FF8172BB1C1003F3F60 /* Test.plist in Resources */,
 				6C688FFB172BCB0E003F3F60 /* Test.data in Resources */,
-				6C3A6D6817530E36005D4FB7 /* map.ar in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1214,6 +1197,12 @@
 				6C34BC89170C064D00F0C192 /* AppDelegate.m in Sources */,
 				6C34BC8C170C064D00F0C192 /* HelloWorldLayer.m in Sources */,
 				6C34BC8F170C064D00F0C192 /* IntroLayer.m in Sources */,
+				6CD5DECD1797F04D00018919 /* MoreArchiveLoader.m in Sources */,
+				6CD5DECE1797F04D00018919 /* MoreCCActionBundle.m in Sources */,
+				6CD5DECF1797F04D00018919 /* MoreCCArchiveSupports.m in Sources */,
+				6CD5DED01797F04D00018919 /* MoreCCMenu.m in Sources */,
+				6CD5DED11797F04D00018919 /* MoreCCUtility.m in Sources */,
+				6CD5DED21797F04D00018919 /* MoreData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1222,6 +1211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C6FA4B1172B7D2B00D758D8 /* main.m in Sources */,
+				6C6EF70A176073A80058799F /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1229,12 +1219,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C70760B174F6BD600E90AB4 /* MoreCCMenu.m in Sources */,
-				6C70760C174F6BD600E90AB4 /* MoreCCActionBundle.m in Sources */,
-				6C70760D174F6BD600E90AB4 /* MoreCCUtility.m in Sources */,
-				6C70760E174F6BD600E90AB4 /* MoreCCArchiveSupports.m in Sources */,
-				6C70760F174F6BE000E90AB4 /* MoreData.m in Sources */,
-				6C707610174F6BE000E90AB4 /* MoreArchiveLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1289,11 +1273,13 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MoreTools/Prefix.pch;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/MoreTools/libs/kazmath/include";
 				INFOPLIST_FILE = MoreTools/Resources/Info.plist;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1307,11 +1293,13 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MoreTools/Prefix.pch;
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/MoreTools/libs/kazmath/include";
 				INFOPLIST_FILE = MoreTools/Resources/Info.plist;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;

@@ -61,7 +61,7 @@ static MoreArchiveLoader *instance_ = nil;
     [handleSet release];
     [super dealloc];
 }
--(void)openArchiveFile:(NSString*)arName{
+-(void)openArchiveFile:(NSString*)arName key:(NSString *)key{
     NSFileHandle *handle = [NSFileHandle fileHandleForReadingAtPath:arName];
     unsigned long long offset = [handle seekToEndOfFile];
     [handle seekToFileOffset:offset - sizeof(uint32_t)];
@@ -71,7 +71,8 @@ static MoreArchiveLoader *instance_ = nil;
     [date getBytes:&total range:NSMakeRange(0, sizeof(uint32_t))];
     [handle seekToFileOffset:offset - total];
     NSData *dictData = [handle readDataOfLength:total];
-    NSDictionary *dict = [NSKeyedUnarchiver unarchiveObjectWithData:dictData];
+    NSData *data2 = moreAES(dictData, key, kCCDecrypt);
+    NSDictionary *dict = [NSKeyedUnarchiver unarchiveObjectWithData:data2];
     [handleSet setValue:[MoreArchiveInfoBundle bundleWithHandle:handle fileInfo:dict] forKey:arName];
 }
 -(void)closeArchiveFile:(NSString*)arName{

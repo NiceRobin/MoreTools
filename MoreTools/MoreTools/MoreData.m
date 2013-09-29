@@ -39,6 +39,34 @@ static MoreSimpleSaveData *MoreSimpleSaveDataInstance_ = nil;
 }
 @end
 
+NSData *moreAES(NSData *input, NSString *key, CCOperation op){
+    char keyPtr[kCCKeySizeAES256 + 1];
+    bzero(keyPtr, sizeof(keyPtr));
+    [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF16StringEncoding];
+    
+    NSUInteger length = input.length;
+    size_t size = length + kCCBlockSizeAES128;
+    void *buffer = malloc(size);
+    
+    size_t encryptedLength = 0;
+    
+    CCCryptorStatus result = CCCrypt(op, kCCAlgorithmAES128,
+                                     kCCOptionPKCS7Padding | kCCOptionECBMode,
+                                     keyPtr, kCCKeySizeAES256,
+                                     NULL,
+                                     [input bytes], input.length,
+                                     buffer, size,
+                                     &encryptedLength);
+    NSData *ret = nil;
+    if (result == kCCSuccess) {
+        ret = [NSData dataWithBytes:buffer length:encryptedLength];
+        free(buffer);
+    }else{
+        free(buffer);
+    }
+    return ret;
+}
+
 void writeLog(NSString* content){
     NSString *path = DocumentDirectoryFile(@"MoreLog.log");
     FILE *fpointer = fopen([path cStringUsingEncoding:NSASCIIStringEncoding], "a");
